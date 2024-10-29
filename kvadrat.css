@@ -1,0 +1,18 @@
+#knop {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(235, 200, 230);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    height: 30px;
+}
+
+.createbox {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
