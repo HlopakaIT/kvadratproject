@@ -4,16 +4,29 @@ knopka.onclick = createbox;
 
 function createbox() {
     const deletebox = document.querySelector(".createbox");
-    const piizda = document.querySelector(".pizda")
+    const newbox = document.createElement("div");
     if (deletebox) {
-        deletebox.remove(), piizda.remove();
+        deletebox.remove();
     } else {
-        const newbox = document.createElement("div");
         newbox.className = "createbox";
-        document.body.append(newbox); 
-        const pizda = document.createElement("div");
-        pizda.className = "pizda";
-        pizda.innerHTML = "как же я заебался делать этот ебучий квадрат)"
-        document.body.append(pizda); 
+        document.body.append(newbox);
     }
+}
+
+const knopka = document.querySelector("input");
+
+
+knopka.onclick = createbox;
+
+function createbox() { 
+
+    const newbox = document.createElement("div");
+    const deletebox = newbox.querySelector(".createbox")
+    
+    if (deletebox) {
+        newbox.remove();
+        } else {
+            newbox.className = "createbox";
+            document.body.append(newbox);
+        }
 }
