@@ -4,7 +4,7 @@
     text-align: center;
     margin: 0 auto;
     display: block;
-    width: 120px;
+    width: 150px;
     height: 30px;
 }
 
@@ -22,4 +22,13 @@
     margin: 0 auto;
     display: block;
     font-size: 20px;
+}
+
+.createbox2 {
+    background-color: rgb(0, 255, 221);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }

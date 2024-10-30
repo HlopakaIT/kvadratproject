@@ -1,19 +1,50 @@
-const knopka = document.querySelector("input");
+const knopka = document.querySelector("#knop");
 
-knopka.onclick = createbox;
+knopka.addEventListener("click", kvadrat);
 
-function createbox() {
-    const deletebox = document.querySelector(".createbox");
-    const piizda = document.querySelector(".pizda")
-    if (deletebox) {
-        deletebox.remove(), piizda.remove();
+function kvadrat() {
+
+    if (document.querySelector(".createbox2")) {
+        document.querySelector(".createbox2").remove();
+        knopka.value = "создать квадрат";
+    } else if (document.querySelector(".createbox")) {
+        document.querySelector(".createbox").className = "createbox2";
+        knopka.value = "удалить квадрат";
     } else {
         const newbox = document.createElement("div");
         newbox.className = "createbox";
-        document.body.append(newbox); 
-        const pizda = document.createElement("div");
-        pizda.className = "pizda";
-        pizda.innerHTML = "как же я заебался делать этот ебучий квадрат)"
-        document.body.append(pizda); 
+        knopka.value = "увеличить квадрат";
+        document.body.append(newbox);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// function createbox() {
+//     const deletebox = document.querySelector(".createbox");
+//     const bigbox = document.querySelector("createbox2")
+//     if (deletebox) {
+//         deletebox.remove();
+//         knopka.value = "создать квадрат";  
+//     } else {
+//         const newbox = document.createElement("div");
+//         newbox.className = "createbox";
+//         document.body.append(newbox);
+//         knopka.value = "увеличить квавдрат";
+//     }
+//     }
+
+
+
+
+
+
